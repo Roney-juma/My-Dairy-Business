@@ -1,0 +1,14 @@
+*{
+    background-image: url(./images/etienne-girardet-YBPlELmdJAI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 200px;
+
+}
