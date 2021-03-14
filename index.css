@@ -1,7 +1,8 @@
-*{
+body{
     background-image: url(./images/etienne-girardet-YBPlELmdJAI-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: aliceblue;
 }
 header{
     align-items: center;
