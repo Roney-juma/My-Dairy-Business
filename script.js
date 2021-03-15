@@ -31,7 +31,7 @@ function incomeOverTime(){
     var shadeD = parseInt(document.getElementById("num4").value);
     var rate = parseInt(document.getElementById("milkrate").value);
 
-    var litres = shadeA + shadeB + shadeC + shadeD;
+    var litres = num1 + num2 + num3 + num4;
 
 
     var day = 1;

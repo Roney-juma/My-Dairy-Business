@@ -72,7 +72,7 @@ form{
     border-radius: 5px;
     border: none;
     width: 400px;
-    box-shadow: 2px 2px 5px rgb(168, 166, 166);
+    /* box-shadow: 2px 2px 5px rgb(168, 166, 166); */
 
 }
 
@@ -91,7 +91,7 @@ button{
     font-weight: 600;
     margin-bottom: 20px;
     cursor: pointer;
-    box-shadow: 2px 4px 5px rgb(168, 166, 166);
+    /* box-shadow: 2px 4px 5px rgb(168, 166, 166); */
 }
 
 .btn-rate{
@@ -124,8 +124,6 @@ button:hover{
     font-size: 20px;
     font-weight: bold;
 }
-
-/*  section Two  */
 
 .report-section{
     display: flex;
