@@ -1,14 +1,12 @@
 body{
-    background-image: url(./images/etienne-girardet-YBPlELmdJAI-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(40, 167, 124);
     color: aliceblue;
 }
-header{
+h1{
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: large;
+    font-size: xx-large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 200px;
 
