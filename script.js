@@ -11,3 +11,4 @@ function totalproduction(){
     document.getElementById("display-shade-c").innerHTML = "Shade C is "+ shadeC + " Liters " ;
     document.getElementById("display-shade-d").innerHTML = "Shade D is "+ shadeD + " Liters " ;
 }
+

@@ -2,29 +2,191 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>My Dairy Business</title>
-        <link rel="Stylesheet" type="text/css" href="index.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My-Dairy-Business</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header>
-            <h1>JUMAs DAIRY PRODUCTS</h1>
-        </header>
-        <h2>Production from shades</h2>
-        <div class="input-field">
-            <label for="num1">Shade A</label>
-            <input class="number" type="text" id="num1" name="num1">
-        </div>
-        <div class="input-field">
-            <label for="num2">Shade B</label>
-            <input class="number" type="text" id="num2" name="num2">
-        </div>
-        <div class="input-field">
-            <label for="num3">Shade C</label>
-            <input class="number" type="text" id="num3" name="num3">
-        </div><div class="input-field">
-            <label for="num4">Shade D</label>
-            <input class="number" type="text" id="num4" name="num4">
+
+       <div class="main-container">
+
+            <h1>
+                My Dairy Business <br>
+                    Monitor
+            </h1>
+
+            <!-- Input sections -->
+            <section class="input-section">
+
+                <!----- Farm inputs section -->
+                <div class="farm-input">
+                    <h2>Farm Input</h2>
+
+                    <form onsubmit="event.preventDefault">
+
+                        <div class="shades-farm">
+
+                            <div class="form-div">
+                                <label> <span>A</span>
+                                    <input type="number" placeholder="Milk from shade A" name="totalmilkA" id="totalmilkA">
+                                </label>
+                            </div>
+                            
+
+                            <div class="form-div">
+                                <label> B
+                                    <input type="number" placeholder="Milk from Shade B" name="totalmilkB" id="totalmilkB">
+                                </label>
+                            </div>
+        
+                            
+                            <div class="form-div">
+                                <label> C
+                                    <input type="number" placeholder="Milk from Shade C" name="totalmilkC" id="totalmilkC"> 
+                                </label>
+                            </div>
+        
+
+                            <div class="form-div">
+                                <label> D
+                                    <input type="number" placeholder="Milk from Shade D" name="totalmilkD" id="totalmilkD"> 
+                                </label>
+                            </div>
+
+
+                        </div>
+
+                        
+                        <button type="button" id="farm-button">Submit</button>
+                    </form>
+
+
+                </div>
+
+
+
+                <!----- Business input Section ---->
+                <div class="business-input">
+
+                    <h2>Business Input</h2>
+
+                    <div class="daily-milk-production">
+                       <h3>Total Milk production</h3>
+                       <p id="milkdisplay">
+
+                       </p>
+                    </div>
+
+                    <hr>
+
+                    <div class="rate-input">
+                        <h2>Milk Selling Rate</h2>
+
+                        <form class="biz-input">
+                            <div class="form-div">
+                                <lable class="rate-lable"> Rate
+                                    <input type="text" placeholder="Enter milk selling rate" name="milkrate" id="milkrate">
+                                </lable>
+                            </div>
+                            
+                        </form>
+
+                        <button class="btn-rate" id="rate-update">Update</button>
+                    </div>
+
+                    <hr>
+
+                    <div class="daily-income">
+                        <h2>Expected Daily Income</h2>
+                        <p id="display-2">
+
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!---- Reports section-->
+
+            <section class="report-section">
+
+                <!-- General weekly, monthly and Yearly report  -->
+                <div class="general-report">
+                    <div class="general-income">
+                        <h2>Weekly income</h2>
+                        <p id="display-3">
+
+                        </p>
+                    </div>
+
+                    <div class="general-income with-border">
+                        <h2>Monthly Income</h2>
+                        <p id="display-4">
+
+                        </p>
+                    </div>
+
+                    <div class="general-income">
+                        <h2>Yearly Income</h2>
+                        <p id="display-5">
+
+                        </p>
+                    </div>
+
+                </div>
+                <!--- Detailed report: milk production, Leap year income & Convertion rate -->
+                <div class="detailed-report">
+
+                    <!--- Milk production report for every shade --->
+                    <div class="milk-production detailed-rep">
+                        <h2>Milk production / Shade</h2>
+                        <P id="display-shade-a"></P>
+                        <P id="display-shade-b"></P>
+                        <P id="display-shade-c"></P>
+                        <P id="display-shade-d"></P>
+
+                    </div>
+
+                    <!--- Leap year income report for every month -->
+                    <div class="leapyear-income detailed-rep with-border">
+                        <h2>Leap year Income</h2>
+                        <table>
+                            <tr>
+                                <th>Statements</th>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--- Milk selling rate change Report --->
+                    <div class="rate-change-report detailed-rep">
+                        <h2>Comparison from last income rate</h2>
+                        <p class="change-records">Your selling rate will show up here</p>
+                        <p id="display-previous-income"></p>
+                        <p id="display-current-income"></p>
+                        <p id="display-difference"></p>
+                        
+                       
+                    </div>
+
+                </div>
+
+
+            </section>
+            <footer>
+                <p>Copyright (c) 2021 Anthony Kazungu</p>
+            </footer>
+        
+       </div>
+        
+        
+        <script src="index.js">
+        </script>
     </body>
-    <script src="js/script.js"></script>
 </html>
