@@ -1,3 +1,7 @@
+window.onload = function() {
+    var addTotal = document.getElementById("farm-button");
+    addTotal.onclick = totalProduction;
+
 function totalProduction(){
 
     var shadeA = parseInt(document.getElementById("num1").value);
@@ -9,25 +13,22 @@ function totalProduction(){
     
     document.getElementById("milkdisplay").innerHTML = litres + " Liters " ;
 
-    document.getElementById("display-shade-a").innerHTML = "Shade A is "+ shadeA + " Liters " ;
-    document.getElementById("display-shade-b").innerHTML = "Shade B is "+ shadeB + " Liters " ;
-    document.getElementById("display-shade-c").innerHTML = "Shade C is "+ shadeC + " Liters " ;
-    document.getElementById("display-shade-d").innerHTML = "Shade D is "+ shadeD + " Liters " ;
+    document.getElementById("display-shade-a").innerHTML = "Shade A is "+ shadesA + " Liters " ;
+    document.getElementById("display-shade-b").innerHTML = "Shade B is "+ shadesB + " Liters " ;
+    document.getElementById("display-shade-c").innerHTML = "Shade C is "+ shadesC + " Liters " ;
+    document.getElementById("display-shade-d").innerHTML = "Shade D is "+ shadesD + " Liters " ;
 
 }
-window.onload = function() {
-    var addTotal = document.getElementById("farm-button");
-    addTotal.onclick = totalProduction;
 
     var findIncome = document.getElementById("rate-update");
     findIncome.onclick = incomeOverTime;
 
 function incomeOverTime(){
 
-    var shadeA = parseInt(document.getElementById("totalmilkA").value);
-    var shadeB = parseInt(document.getElementById("totalmilkB").value);
-    var shadeC = parseInt(document.getElementById("totalmilkC").value);
-    var shadeD = parseInt(document.getElementById("totalmilkD").value);
+    var shadeA = parseInt(document.getElementById("num1").value);
+    var shadeB = parseInt(document.getElementById("num2").value);
+    var shadeC = parseInt(document.getElementById("num3").value);
+    var shadeD = parseInt(document.getElementById("num4").value);
     var rate = parseInt(document.getElementById("milkrate").value);
 
     var totalMilk = shadeA + shadeB + shadeC + shadeD;

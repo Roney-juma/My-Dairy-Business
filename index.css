@@ -1,13 +1,230 @@
-body{
-    background-color: rgb(40, 167, 124);
-    color: aliceblue;
+*{
+    font-family: Verdana, Sans-Serif;
+    margin: 0;
 }
-h1{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 200px;
 
+body{
+    display: flex;
+    justify-content: center;
+    /* margin: 20px; */
+}
+
+.main-container{
+    background-color: #7141f7;
+}
+
+h1{
+    text-align: center;
+    margin: 50px 20px;
+}
+
+.input-section, .report-section{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.farm-input{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    margin-right: 30px;
+    box-shadow: 0 0 10px rgb(158, 156, 156);
+
+}
+
+.business-input{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(158, 156, 156);
+}
+
+form{
+    padding: 30px 60px;
+}
+
+.biz-input{
+    padding: 0px 60px;
+}
+
+.form-div{
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.form-div label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-div input{
+    background-color: rgba(145, 144, 144, 0.342);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 400px;
+    box-shadow: 2px 2px 5px rgb(168, 166, 166);
+
+}
+
+h2{
+    text-align: center;
+    padding: 15px 30px;
+}
+
+button{
+    border: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgb(168, 166, 166);
+}
+
+.btn-rate{
+    margin-left: 60px;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(255, 186, 57);
+}
+
+.bsr-table{
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 80%;
+    margin-left: 60px;
+}
+
+.daily-income p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.daily-milk-production{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.daily-milk-production p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*  section Two  */
+
+.report-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.general-report{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(158, 156, 156);
+}
+
+.general-income{
+    padding: 20px 30px;
+    margin: 20px;
+}
+
+.general-income p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.with-border{
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+    padding: 20px 50px;
+}
+
+.detailed-rep{
+    padding: 20px;
+}
+
+.detailed-rep p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.milk-production, .leapyear-income{
+    overflow: scroll;
+}
+
+
+.leapyear-count, .change-records{
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.detailed-report table{
+    margin-left: 30px;
+}
+
+
+.detailed-report{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(158, 156, 156);
+}
+
+.shade-letters{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.letters{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(79, 228, 79);
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 20px;
+    margin: 5px;
+   
+    border-radius: 50%;
+}
+
+.shade-text{
+    padding: 20px;
+}
+
+.change-records{
+    padding-bottom: 60px;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 30px;
 }
