@@ -11,6 +11,7 @@ body{
 
 .main-container{
     background-image: url(./images/etienne-girardet-YBPlELmdJAI-unsplash.jpg);
+    width: 80%;
 }
 
 h1{
@@ -41,7 +42,6 @@ h1{
     width: 50%;
     border: none;
     border-radius: 10px;
-    /* box-shadow: 0 0 10px rgb(158, 156, 156); */
 }
 
 form{
@@ -103,11 +103,6 @@ button:hover{
 .bsr-table{
     margin-left: 60px;
     margin-bottom: 20px;
-}
-
-hr{
-    width: 80%;
-    margin-left: 60px;
 }
 
 .daily-income p{

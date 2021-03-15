@@ -40,10 +40,10 @@ function incomeOverTime(){
     var year = 365;
 
         
-        var dailyIncome = day * rate * totalMilk;
-        var weeklyIncome = week * rate * totalMilk;
-        var monthlyIncome = month * rate * totalMilk;
-        var yearlyIncome = year * rate * totalMilk;
+        var dailyIncome = day * rate * litres;
+        var weeklyIncome = week * rate * litres;
+        var monthlyIncome = month * rate * litres;
+        var yearlyIncome = year * rate * litres;
 
     document.getElementById("display-2").innerHTML = dailyIncome + " KSH " ;
     document.getElementById("display-3").innerHTML = monthlyIncome + " KSH " ;
