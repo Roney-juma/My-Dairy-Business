@@ -4,12 +4,12 @@ window.onload = function() {
 
 function totalProduction(){
 
-    var shadeA = parseInt(document.getElementById("num1").value);
-    var shadeB = parseInt(document.getElementById("num2").value);
-    var shadeC = parseInt(document.getElementById("num3").value);
-    var shadeD = parseInt(document.getElementById("num4").value);
+    var shadesA = parseInt(document.getElementById("num1").value);
+    var shadesB = parseInt(document.getElementById("num2").value);
+    var shadesC = parseInt(document.getElementById("num3").value);
+    var shadesD = parseInt(document.getElementById("num4").value);
         
-    var litres = shadeA + shadeB + shadeC + shadeD;
+    var litres = shadesA + shadesB + shadesC + shadesD;
     
     document.getElementById("milkdisplay").innerHTML = litres + " Liters " ;
 
@@ -25,10 +25,10 @@ function totalProduction(){
 
 function incomeOverTime(){
 
-    var shadeA = parseInt(document.getElementById("num1").value);
-    var shadeB = parseInt(document.getElementById("num2").value);
-    var shadeC = parseInt(document.getElementById("num3").value);
-    var shadeD = parseInt(document.getElementById("num4").value);
+    var shadesA= parseInt(document.getElementById("num1").value);
+    var shadesB = parseInt(document.getElementById("num2").value);
+    var shadesC = parseInt(document.getElementById("num3").value);
+    var shadesD = parseInt(document.getElementById("num4").value);
     var rate = parseInt(document.getElementById("milkrate").value);
 
     var litres = num1 + num2 + num3 + num4;
