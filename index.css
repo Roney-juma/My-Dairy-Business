@@ -9,9 +9,10 @@ body{
     /* margin: 20px; */
 }
 
-.main-container{
+.container{
     background-image: url(./images/etienne-girardet-YBPlELmdJAI-unsplash.jpg);
     width: 80%;
+    background-position: fixed;
 }
 
 h1{
@@ -23,7 +24,7 @@ h1{
     color: lemonchiffon;
 }
 
-.input-section, .report-section{
+.section, .output{
     display: flex;
     flex-direction: row;
     background-color: #FFFFFF;
@@ -127,13 +128,13 @@ button:hover{
     font-weight: bold;
 }
 
-.report-section{
+.section{
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
 
-.general-report{
+.report{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -143,12 +144,12 @@ button:hover{
     box-shadow: 0 0 10px rgb(158, 156, 156);
 }
 
-.general-income{
+.income{
     padding: 20px 30px;
     margin: 20px;
 }
 
-.general-income p{
+.income p{
     text-align: center;
     font-weight: bold;
 }
